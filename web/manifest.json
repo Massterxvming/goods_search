@@ -1,0 +1,19 @@
+{
+    "name": "价迹 · 看见价格的变化",
+    "short_name": "价迹",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F7F9F6",
+    "theme_color": "#203D34",
+    "description": "发现日常里的价格变化。",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

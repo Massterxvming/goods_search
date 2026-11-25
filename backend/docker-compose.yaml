@@ -1,0 +1,39 @@
+name: goods-search
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: goods_search
+      POSTGRES_PASSWORD: ${GOODS_SEARCH_DATABASE_PASSWORD:?Run fvm dart backend/tool/setup.dart first}
+    ports:
+      - "127.0.0.1:8090:5432"
+    volumes:
+      - goods_search_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d goods_search"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  postgres_test:
+    image: pgvector/pgvector:pg16
+    profiles: [test]
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: goods_search_test
+      POSTGRES_PASSWORD: ${GOODS_SEARCH_TEST_DATABASE_PASSWORD:?Run fvm dart backend/tool/setup.dart first}
+    ports:
+      - "127.0.0.1:9090:5432"
+    volumes:
+      - goods_search_test_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d goods_search_test"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  goods_search_data:
+  goods_search_test_data:

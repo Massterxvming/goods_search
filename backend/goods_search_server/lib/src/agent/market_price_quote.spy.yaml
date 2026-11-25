@@ -1,0 +1,6 @@
+class: MarketPriceQuote
+fields:
+  sourceId: String
+  seller: String
+  price: double
+  priceText: String

@@ -1,0 +1,10 @@
+class: MarketPriceHistory
+fields:
+  startMonth: DateTime
+  endMonth: DateTime
+  coveredMonths: int
+  changePercent: double?
+  points: List<MonthlyPricePoint>
+  forecast: PriceForecast
+  methodology: String
+  limitations: List<String>

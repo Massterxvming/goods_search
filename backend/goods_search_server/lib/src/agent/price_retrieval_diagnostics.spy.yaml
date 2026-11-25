@@ -1,0 +1,9 @@
+class: PriceRetrievalDiagnostics
+fields:
+  searches: List<PlatformSearchDiagnostic>
+  attemptedPages: int
+  readablePages: int
+  evidencePages: int
+  loginRequiredPages: int
+  verificationRequiredPages: int
+  modelInvoked: bool

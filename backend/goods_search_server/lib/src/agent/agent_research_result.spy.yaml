@@ -1,0 +1,7 @@
+class: AgentResearchResult
+fields:
+  status: String
+  message: String
+  summary: String?
+  requiredData: List<String>
+  steps: List<String>

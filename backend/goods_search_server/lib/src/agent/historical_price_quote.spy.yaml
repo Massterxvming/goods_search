@@ -1,0 +1,9 @@
+class: HistoricalPriceQuote
+fields:
+  platform: String
+  productId: String
+  url: String
+  seller: String
+  price: double
+  observedAt: DateTime
+  evidence: String

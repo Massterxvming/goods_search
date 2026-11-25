@@ -1,0 +1,68 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Serverpod local credentials
+/backend/.env
+/backend/goods_search_server/config/passwords.yaml
+
+# Local environment files (keep setup templates)
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Credentials, signing keys, and local database snapshots
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+
+# Node dependencies; package-lock.json is committed
+node_modules/
+
+# FVM SDK links and cache (commit .fvmrc instead)
+.fvm/
+
+# Symbolication and obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android Studio build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release

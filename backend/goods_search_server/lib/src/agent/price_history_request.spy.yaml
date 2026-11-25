@@ -1,0 +1,7 @@
+class: PriceHistoryRequest
+fields:
+  productName: String
+  market: String
+  currency: String
+  startMonth: DateTime
+  endMonth: DateTime

@@ -1,0 +1,7 @@
+class: AgentServiceStatus
+fields:
+  serviceAvailable: bool
+  sdkReady: bool
+  modelConfigured: bool
+  missingConfiguration: List<String>
+  message: String

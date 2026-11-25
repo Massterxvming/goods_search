@@ -1,0 +1,7 @@
+class: PriceResearchRequest
+fields:
+  productName: String
+  market: String
+  currency: String
+  historyMonths: int
+  forecastMonths: int

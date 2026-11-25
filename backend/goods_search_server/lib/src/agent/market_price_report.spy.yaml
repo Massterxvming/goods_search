@@ -1,0 +1,21 @@
+class: MarketPriceReport
+fields:
+  status: String
+  message: String
+  productName: String
+  market: String
+  currency: String
+  averagePrice: double?
+  lowestPrice: double?
+  highestPrice: double?
+  sampleCount: int
+  sourceCount: int
+  summary: String
+  methodology: String
+  limitations: List<String>
+  researchedAt: DateTime
+  cached: bool
+  quotes: List<MarketPriceQuote>
+  sources: List<MarketPriceSource>
+  history: MarketPriceHistory?
+  diagnostics: PriceRetrievalDiagnostics?

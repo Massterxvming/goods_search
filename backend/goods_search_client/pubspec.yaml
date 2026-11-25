@@ -1,0 +1,12 @@
+name: goods_search_client
+description: Generated Serverpod client for the goods_search application.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+resolution: workspace
+
+dependencies:
+  serverpod_client: 3.4.13

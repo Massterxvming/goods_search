@@ -1,0 +1,8 @@
+class: MonthlyPricePoint
+fields:
+  month: DateTime
+  averagePrice: double?
+  lowestPrice: double?
+  highestPrice: double?
+  sampleCount: int
+  quotes: List<HistoricalPriceQuote>

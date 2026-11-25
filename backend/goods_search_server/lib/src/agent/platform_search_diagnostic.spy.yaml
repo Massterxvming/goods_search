@@ -1,0 +1,7 @@
+class: PlatformSearchDiagnostic
+fields:
+  platform: String
+  status: String
+  resultCount: int
+  productPageCount: int
+  message: String

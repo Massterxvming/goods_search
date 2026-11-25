@@ -1,0 +1,7 @@
+class: PriceForecast
+fields:
+  status: String
+  method: String
+  message: String
+  sampleMonths: int
+  points: List<ForecastPricePoint>

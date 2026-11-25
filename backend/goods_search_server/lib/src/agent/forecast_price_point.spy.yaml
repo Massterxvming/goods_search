@@ -1,0 +1,4 @@
+class: ForecastPricePoint
+fields:
+  month: DateTime
+  predictedPrice: double

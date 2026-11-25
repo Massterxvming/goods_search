@@ -1,0 +1,11 @@
+class: MarketPriceSource
+fields:
+  id: String
+  title: String
+  url: String
+  publishedAt: String?
+  platform: String
+  productId: String
+  fetchedAt: DateTime?
+  accessStatus: String?
+  accessMessage: String?

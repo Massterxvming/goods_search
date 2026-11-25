@@ -1,0 +1,19 @@
+class: PriceObservation
+table: price_observation
+serverOnly: true
+fields:
+  queryKey: String
+  observationKey: String
+  platform: String
+  productId: String
+  sourceUrl: String
+  seller: String
+  priceCents: int
+  priceText: String
+  observedAt: DateTime
+indexes:
+  price_observation_unique_idx:
+    fields: observationKey
+    unique: true
+  price_observation_query_time_idx:
+    fields: queryKey, observedAt
